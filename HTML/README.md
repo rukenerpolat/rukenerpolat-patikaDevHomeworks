@@ -7,6 +7,7 @@
 ### HTML Ödevleri:
 
 Ödev - 1 :
+
 ![HTMLodev1](https://user-images.githubusercontent.com/72344293/150866391-47ed0856-f664-41c6-afda-a261c7081732.png)
 
 Benim yaptığım:
