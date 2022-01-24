@@ -33,8 +33,11 @@ Referans Linkler de yeni sekmede açılabilir şekilde verildi.
 
 <hr>
 
-<!-- Uygulama - Bölüm Sonu Çalışması: -->
+Uygulama - Bölüm Sonu Çalışması:
 
+https://user-images.githubusercontent.com/72344293/150881730-ae7c1e89-2833-4334-b5fe-ba1255681cbe.mp4
+
+<hr>
 
 Ödev - 3:
 Yemek tarifi
