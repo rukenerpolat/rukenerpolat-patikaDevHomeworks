@@ -1,3 +1,4 @@
+
 # image
 
 *.png
@@ -5,3 +6,8 @@
 *.img 
 *.pic
 *.images 
+*pictures
+*images
+
+# video
+*.mp4
