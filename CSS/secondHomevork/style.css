@@ -1,4 +1,5 @@
 :root{
+    /* Renkleri değişken olarak atadım. */
     --main-color: #fff;
     --first-color: #7EE5DA;
     --second-color: #70CCC2;
@@ -19,31 +20,33 @@ body{
 .box-1{
     background-color: var(--forth-color);
     text-align: center;
+    width: 1350px;
+    height: 32px;
 }
 .box-1 #search {
     width: 320px;
     height: 20px;
 }
 button {
-    padding: 2px;
+    padding: 1.5px;
 }
-
 /*----------------------------------------*/
-
 .box-2{
     display: flex;
+    width: 1350px;
+    height: 76px;
 }
 .td{
     margin: 2px 0;
     text-align: center;
-    font-size: 13px;
 }
 .first-td{
     background-color: var(--first-color);
     display: flex;
     flex-direction: column;
-    padding: 20px 0;
+    padding: 12px 0;
     width: 37%;
+    font-size: 16px;
 }
 .second-td{
     background-color: var(--second-color);
@@ -53,15 +56,15 @@ button {
     margin: 2px 2px;
     padding: 5px 0;
     width: 19%;
+    font-size: 13px;
 }
 .third-td{
     background-color: var(--third-color);
     width: 44%;
+    font-size: 13px;
 }
-
-
 footer{
-    margin: 0 auto;
+    margin: 5;
     text-align: center;
     font-size: 13px;
 }
