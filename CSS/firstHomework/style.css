@@ -11,14 +11,14 @@
     --fourth-color: #395159;
     --fifth-color: #cba688;
 }
-
 /* -----------Global Setting-------------- */
+
 *{
     font-family:'Poppins', sans-serif;
     box-sizing: border-box;
     padding: 0;
     margin:0;
-    outline: none;
+    /* outline: none; */
     text-transform: capitalize;
 }
 
@@ -28,55 +28,66 @@ body{
     background-color: var(--first-color);
     text-align: center;
 }
-
+.wrapper{
+    width: 90%;
+    margin: 0 auto;
+}
 header{
     width: 100%;
     height: 100px;
-    margin: 0 auto;
-    padding: 10px;
     background: var(--second-color);
     position: fixed;
 }
-
-header .logo a{
+.logo{
+    width: 40%;
+    float: left;
+    text-align: left;
+    line-height: 100px;
+}
+.logo a{
+    text-decoration: none;
     margin: 10px;
     padding: 15px 16px;
     color: var(--first-color);
-    font-family: 'Pacifico', cursive;
     font-size: 22px;
-    display: block;
     text-align: center;
-    text-decoration: none;
-    float: left;
+    font-family: 'Pacifico', cursive;
     letter-spacing: 3px;
 }
 
-header .navbar ul a{
-    margin: 10px;
-    padding: 14px 16px;
-    color: var(--first-color);
-    display: block;
-    text-align: center;
-    text-decoration: none;
-    font-size: 18px;
-    font-weight: 500;
+nav{
     float: right;
-    letter-spacing: 1px;
+    line-height: 100px;
 }
 
-header .navbar li a:hover {
+nav a{
+    text-decoration: none;
+    letter-spacing: 1px;
+    font-size: 18px;
+    color: var(--first-color);
+    padding: 14px 16px;
+    margin: 10px;  /*0 1px*/
+
+    /* display: block;
+    text-align: center;
+    font-weight: 500;
+    float: right; */
+}
+
+nav a:hover {
     background-color: var(--fifth-color);
     border: solid 1.5px;
     border-radius: 30px;
     border-color: var(--main-color);
+    font-weight: 600;
 }
 
 .banner-area{
-    background-image: url(pictures/banner3.png);
+    background-image: url(pictures/banner3_hd.jpg);
     background-size: cover;
     background-position: center center;
     top: 100px;
-    height: 90vh;
+    height: 80vh;
     width: 100%;
     position: fixed;
 }
@@ -88,10 +99,11 @@ header .navbar li a:hover {
     display: block;
     width: 100%;
     height: 100%;
+    z-index: -1;
     /* background: var(--fifth-color); */
     /* opacity: .2; */
-    z-index: -1;
 }
+
 /* .banner-area h2{
     padding-top: 8%;
     font-size: 80px;
@@ -99,15 +111,14 @@ header .navbar li a:hover {
     display: inline-block;
 } */
 
-
 .content-area{
     background-color: var(--first-color);
     position: relative;
     width: 100%;
     height: 2200px; 
     top: 940px;
-    
 }
+
 .content-area h1{
     font-size: 40px;
     margin: 0;
@@ -115,9 +126,8 @@ header .navbar li a:hover {
     letter-spacing: 3px;
 }
 .content-area p{
-    margin: 0;
     padding: 2% 0;
-    line-height: 35px;
+    line-height: 25px; 
     text-align: justify;
 }
 
@@ -136,15 +146,64 @@ h3,h4,h5,h6{
 }
 
 footer{
+    background: var(--second-color);
     width: 100%;
-    height: 100px;
-    left: 0;
+    height: 269px;
+    float: left;
+    color: var(--first-color);
+    
+    /* left: 0;
     bottom: 0;
     padding: 30px;
-    background: var(--second-color);
-    position: fixed;
+    position: fixed; */
 }
-footer li a{
+.footer_container{
+    width: 768px;
+    height: 175px;
+    margin: 30px auto;
+}
+.footer_container:after{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+footer ul{
+    list-style-type:none;
+    margin:17px 0;
+    padding:0px;
+}
+footer ul li {
+    float:left;
+    font-family:tahoma; 
+    font-size:12px; 
+    margin-bottom:8px; 
+    clear:left; 
+    color:#949798; 
+}
+footer #box{
+    width:auto; 
+    height:125px; 
+    float:left;
+}
+
+#box h2{
+    font-size: 14px;
+}
+
+#box:last-child li {
+    float:left;
+    clear:none;
+    margin-right:10px;
+}
+
+
+/* footer li a{
     color: var(--first-color);
     display: block;
     text-align: center;
@@ -161,4 +220,4 @@ footer li a:hover {
     border: solid 1.5px;
     border-radius: 30px;
     border-color: var(--main-color);
-}
+} */
