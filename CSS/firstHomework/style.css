@@ -26,7 +26,6 @@
 
 body{
     background-color: var(--first-color);
-    text-align: center;
 }
 
 h1,h2{
@@ -42,6 +41,7 @@ h3,h4,h5,h6{
 .wrapper{
     width: 90%;
     margin: 0 auto;
+    text-transform: none;
 }
 header{
     width: 100%;
@@ -54,6 +54,7 @@ header{
     float: left;
     text-align: left;
     line-height: 100px;
+
 }
 .logo a{
     text-decoration: none;
@@ -64,6 +65,8 @@ header{
     text-align: center;
     font-family: 'Pacifico', cursive;
     letter-spacing: 3px;
+    text-transform: none;
+
 }
 
 nav{
@@ -92,18 +95,19 @@ nav a:hover {
     background-image: url(pictures/banner3_hd.jpg);
     background-size: cover;
     background-position: center center;
-    /* top: 50px; */
     height: 100vh;
     width: 100%;
 }
 
 .content-area h1{
+    text-align: center; /**/
     font-size: 40px;
     margin: 0;
     padding-top: 30px;
     letter-spacing: 3px;
 }
 .content-area p{
+    text-align: center; /**/
     padding: 2% 0;
     line-height: 25px; 
     text-align: justify;
@@ -119,27 +123,15 @@ ul{
 .footer{
     background: var(--second-color);
     width: 100%;
-    height: 269px;
+    height: 160px;
     float: left;
     color: var(--first-color);
-}
-.footer #box b{
-    font-size: 14px;
 }
 
 .footer_container{
     width: 768px;
     height: 100px;
-    margin: 30px auto;
-}
-#box{
-    width: auto;
-    height: 125px;
-    float: left;
-}
-#box a{
-    text-decoration: none;
-    color: var(--third-color);
+    margin: 20px auto;
 }
 
 .footer ul{
@@ -156,8 +148,16 @@ ul{
     color: var(--third-color);
 }
 
-#box:last-child li {
-    float:left;
-    clear:none;
-    margin-right:10px;
-} 
+.box{
+    width: auto;
+    height: 125px;
+    float: left;
+}
+.box a{
+    text-decoration: none;
+    color: var(--third-color);
+}
+.box b{
+    font-size: 14px;
+    color: var(--first-color);
+}
